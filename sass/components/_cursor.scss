@@ -1,0 +1,21 @@
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $color-header-yellow;
+    mix-blend-mode: difference;
+    transition: all .1s ease-out;
+    pointer-events: none;
+    z-index: 100;
+    transform: scale($scale-cursor);
+    font-size: 3.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--text {
+        width: 10px;
+    }
+}

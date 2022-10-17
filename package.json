@@ -1,0 +1,14 @@
+{
+  "name": "typeandpixel",
+  "version": "1.0.0",
+  "description": "Landing page for typeandpixel",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Dario Gjoka",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

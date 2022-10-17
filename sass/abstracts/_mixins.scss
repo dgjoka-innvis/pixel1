@@ -1,0 +1,100 @@
+@mixin font-type($font) {
+    $font: unquote($font);
+    @font-face {
+        font-family: $font;
+        src: url("/sass/vendors/fonts/#{$font}.ttf");
+    }
+}
+
+/*
+    width e shumezova me 1.5 per te konvertuar me lehte fotot nga % ne rem, sepse ne fillim i kisha lene me % 
+    me nxorri ca probleme ne responsivitet
+*/
+@mixin size($width) {
+    width: calc($width * 1.5);
+    height: auto;
+}
+
+@mixin defaltHeight($height) {
+    @for $i from 1 through 15 {
+        #img-#{$i} {
+            height: $height;
+        }
+    }
+}
+
+@mixin defaultSection() {
+    @for $i from 2 through 10 {
+        .section-#{$i} {
+            height: 150vh;
+            background-color: var(--section-background-default);
+            transition: all .1s ease-in;
+            padding: calc(37.25px + 0.66vw);
+            position: relative;
+            z-index: calc(-1 * $i);
+    
+            img {
+                position: absolute;
+            }
+        }
+    }    
+}
+
+/*
+    Percakton properties te imazheve te seksioneve
+*/
+
+@mixin image($section-id, $order, $width, $top, $left, $extra-property) {
+    #section-#{$section-id}--img-#{$order} {
+        @include size($width);
+        top: $top !important;
+        left: $left !important;
+
+        @if #{$extra-property} == "background-color" {
+            #{$extra-property}: imageColor($section-id);
+        }
+        @else if #{$extra-property} == "z-index" {
+            #{$extra-property}: 3;
+        }
+    }
+}
+
+
+/*
+    Media Queries    
+*/
+@mixin extra_small_screen {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
+
+@mixin small_screen(){
+    @media (max-width: 500px){
+        @content;
+    }
+}
+
+@mixin small_to_medium_screen(){
+    @media (max-width: 700px){
+        @content;
+    }
+}
+
+@mixin medium_screen(){
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin large_screen(){
+    @media (max-width: 900px){
+        @content;
+    }
+}
+
+@mixin extra_large_screen(){
+    @media (max-width: 992px) {
+        @content;
+    }
+}

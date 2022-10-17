@@ -1,0 +1,105 @@
+@include font-type("Gilroy-Bold");
+@include font-type("Gilroy-Medium");
+@include font-type("Gilroy-Light");
+@include font-type("Gilroy-Regular");
+
+
+.type-and-pixel {
+    font-family: $font-bold;
+    display: inline;
+}
+
+h1 {
+    font-size: $font-size-header-1;
+    line-height: 10rem;
+    opacity: $opacity-header;
+    font-weight: 100;
+    transition: all .1s ease-in;
+}
+
+.main-title {
+    font-size: 15.4493rem;
+    line-height: 1;
+    text-align: left;
+    position: fixed;
+    top: $top-position-distance;
+    z-index: 10;
+    mix-blend-mode: difference;
+
+    .header-first{
+        color: white;
+    }
+    
+    .header-second {
+        color: white;
+        position: fixed;
+        top: 23%;
+    }
+
+    &--row-1{
+        line-height: 15.4rem;
+    }
+}
+
+.paragraph {
+    font-family: $font-regular;
+    font-size: $font-size-secondary;
+    line-height: 1.625;
+    font-weight: 400;
+    color: black;
+
+}
+
+.float-up-container {
+    position: absolute;
+    bottom: $paragraph-bottom;
+    left: 0;
+    height: 100px;
+    width: 450px;
+    margin-left: 5.5rem;
+}
+
+.float-up-paragraph {
+    position: relative;
+    height: 94.75px;
+    width: 45.3067rem;
+    z-index: 3;
+}
+
+.footer-text {
+    color: white;
+    height: 25rem;
+    transition: all .1s ease-out;
+    position: relative;
+    z-index: -11;
+
+
+    &--small {
+        font-family: $font-light;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    &--big {
+        font-family: $font-medium;
+        font-size: calc(43.51px + 3.98vw);
+        font-weight: 600;
+
+        &::after {
+            content: "";
+            width: $bottom-line-width;
+            display: block;
+            height: 1rem;
+            background-color: white;
+            transition: all .1s ease-in;
+        }
+    }
+
+    &--arrow {
+        font-size: 8rem;
+        height: 10rem;
+        opacity: $opactiy-arrow;
+        transform: rotate($rotation-angle-arrow);
+        transition: all .1s ease-out;
+    }
+}

@@ -1,0 +1,8 @@
+@function imageColor($section-id) {
+
+    @for $i from 4 through 9 {
+        @if #{$section-id} == #{$i} {
+            @return nth($list: $colors, $n: $i - 3);
+        }
+    }
+}

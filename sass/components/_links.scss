@@ -1,0 +1,63 @@
+.link-container {
+    display: block;
+
+
+    .link {
+        font-size: 14px;
+        margin-top: 5rem;
+        display: inline-block;
+        letter-spacing: 0.2rem;
+        padding-bottom: 0.6rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: $color-text-main;
+        position: relative;
+        z-index: 2;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            right: 0;
+            left: 0;
+            display: block;
+            height: 3px;
+            background-color: #5945FF;
+            transform-origin: right;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            transform: scaleX(0);
+            right: 0;
+            left: 0;
+            display: block;
+            height: 3px;
+            background-color: #5945FF;
+            transform-origin: left;
+        }
+    
+        &:hover::before {
+            animation-name: wipeLeft;
+            animation-duration: .2s;
+            animation-fill-mode: forwards;
+        }
+
+        &:hover::after {
+            animation-name: wipeRight;
+            animation-duration: .2s;
+            animation-delay: .2s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+
+.link-bold {
+    font-size: 2.2rem;
+    color: $color-text-main;
+}

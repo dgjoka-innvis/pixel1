@@ -1,0 +1,31 @@
+.u-font-big { font-size: 2rem; }
+.u-font-medium { font-family: $font-medium; font-weight: 900; }
+.u-font-regular { font-size: 1.8rem; }
+.u-font-small { font-size: 1.6rem; }
+.u-font-small-px { font-size: 16px; }
+.u-font-list { font-family: $font-medium; }
+
+.u-flex-end { align-self: flex-start; }
+.u-position-fixed { position: fixed; };
+
+.u-clip-path-small { clip-path: polygon(0% $top-clip-distance, 100% $top-clip-distance, 100% $bottom-clip-distance, 0% $bottom-clip-distance); }
+.u-clip-path-list { clip-path: polygon(0% $top-clip-list, 100% $top-clip-list, 100% 60%, 0% 60%); }
+.u-clip-path-big { clip-path: polygon(0% 0%, 100% 0%, 100% $bottom-clip-distance, 0% $bottom-clip-distance); }
+
+.u-on-top { z-index: 99; }
+
+.u-ease-out { transition: .1s ease-out; }
+.u-ease-in { transition: .1s ease-in; }
+
+.u-hidden { display: none; }
+.u-visible { display: inline; }
+
+.u-invisible { opacity: 0; }
+
+.u-move-y { transform: translateY($shift-distance); }
+.u-move-y-img { transform: translateY($shift-distance-img);}
+
+.u-color-yellow { color: $color-header-yellow !important; }
+
+.u-margin-bottom-small { margin-bottom: 1rem; }
+.u-margin-bottom-big { margin-bottom: 5rem; }

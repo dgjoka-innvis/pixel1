@@ -1,0 +1,161 @@
+// Vendosim nje default height per imazhet
+@include defaltHeight(30rem);
+
+/*
+ Imazhet e karuselit te seksionit te pare
+*/
+
+#img-1 { 
+    z-index: 2;
+    left: 480px;
+    bottom: -30px;
+    height: 36rem;
+}
+
+#img-2 {
+    bottom: -40px;
+    left: 420px;
+    height: 32rem;
+}
+
+#img-3 {
+    bottom: 0px;
+    left: -80px;
+    height: 25rem;
+}
+
+#img-4 {
+    z-index: 1;
+    right: 610px;
+    bottom: -11rem;
+}
+
+#img-5 {
+    bottom: -50px;
+    left: -380px;
+    height: 32rem;
+}
+
+#img-6 {
+    bottom: 0;
+}
+
+#img-7 {
+    bottom: 350px;
+    left: -640px;
+    height: 32rem;
+}
+
+#img-8 {
+    right: 750px;
+    bottom: 170px;
+    height: 28rem;
+}
+
+#img-9 {
+    left: 480px;
+    bottom: 390px;
+    height: 43rem;
+}
+
+#img-10 {
+    bottom: 70px;
+    right: 100px;
+    height: 40rem;
+}
+
+#img-11 {
+    bottom: -110px;
+    height: 40rem;
+    left: 720px;
+    z-index: 2;
+}
+
+#img-12 {
+    bottom: 390px;
+    left: -50px;
+    height: 29rem;
+}
+
+#img-13 {
+    bottom: 410px;
+    left: -360px;
+    height: 47rem;
+}
+
+#img-14 {
+    bottom: 430px;
+    left: 590px;
+    height: 27rem;
+}
+
+#img-15 {
+    bottom: 360px;
+    right: 590px;
+    height: 36rem;
+}
+
+/*
+    Imazhi i pare i seskionit 6 ndodhet brenda nje div te cilit i jane caktuar keto properties
+*/
+
+#section-6 {
+    
+    .img-6-wrapper {
+        width: 52.5rem;
+        height: 52.5rem;
+        background-color: $color-img-3;
+        position: absolute;
+        left: 19% !important;
+        top: 19% !important;
+        padding-top: 60px;
+        padding-left: 80px; 
+    }
+
+}
+
+/*
+    Vendosja e properties per imazhet duke perdorur mixin
+*/
+
+// Imazhet e seksionit 3
+@include image(3, 1, 50rem, 19%, 30%, null);
+@include image(3, 2, 15rem, 67%, 69%, z-index);
+@include image(3, 3, 28rem, 80%, 34%, z-index);
+
+
+// Imazhet e seksionit 4
+@include image(4, 1, 29rem, 25%, 53%,background-color);
+@include image(4, 2, 30rem, 79%, 25%, z-index);
+@include image(4, 3, 33rem, 13%, auto, null);
+
+
+// Imazhet e seksionit 5
+@include image(5, 1, 35rem, 54%, 55%, z-index);
+@include image(5, 2, 23rem, 85%, 10%, z-index);
+@include image(5, 3, 25rem, 20%, 39%, background-color);
+
+
+// Imazhet e seksionit 6
+@include image(6, 1, 25rem, auto, auto, null);
+@include image(6, 2, 20rem, 88%, 37%, z-index);
+@include image(6, 3, 35rem, 62%, 50%, z-index);
+
+
+// Imazhet e seksionit 7
+@include image(7, 1, 32rem, 20%, 35%, background-color);
+@include image(7, 2, 30rem, 75%, 65%, z-index);
+@include image(7, 3, auto, 90%, 23%, z-index);
+
+
+// Imazhet e seksionit 8
+@include image(8, 1, 18rem, 20%, 18%, background-color);
+@include image(8, 2, 38rem, 45%, 52%, z-index);
+@include image(8, 3, 26rem, 85%, 15%, z-index);
+
+
+// Imazhet e seksionit 9
+@include image(9, 1, 30rem, 23%, 39%, z-index);
+@include image(9, 2, 20rem, 63%, 75%, background-color);
+@include image(9, 3, 33rem, 74%, 25%, z-index);
+

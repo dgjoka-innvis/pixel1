@@ -1,0 +1,72 @@
+.white-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: $width-menu;
+    height: 100vh;
+    z-index: 15;
+    background-color: white;
+    overflow-y: $overflow-y-menu;
+    overflow-x: hidden;
+    transition: all .5s ease-in;
+
+    &--list-cover {
+        height: 112vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 5rem;
+        padding-top: 17rem;
+    }
+
+    &--list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 5rem;
+        height: 27rem;
+
+        li {
+            height: 10rem;
+            cursor: pointer;
+            clip-path: polygon(0% $top-clip-list, 100% $top-clip-list, 100% 60%, 0% 60%);
+            transition: clip-path .6s ease-in;
+
+            .li--block {
+                animation-name: clipBackwards;
+                animation-duration: .6s;
+            }
+
+            .li--block:hover {
+                animation-name: clipUpwards;
+                animation-duration: .6s;
+            }
+        }
+    }
+    
+    &--contact {
+        opacity: $opacity-contacts;
+        transition: opacity .6s ease-in;
+    }
+
+    &--contact-links {
+        list-style: none;
+        display: flex;  // Flex display
+        flex-direction: column;
+        height: 32vh;
+    }
+}
+
+.shadow {
+    position: $position-shadow;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+    background-color: black;
+    opacity: $opacity-shadow;
+    transition: all .2s ease-out;
+}

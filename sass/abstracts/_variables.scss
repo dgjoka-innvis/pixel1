@@ -1,0 +1,171 @@
+// CSS VARIABLES
+:root {
+    --bottom-clip-distance: 90%;
+    --top-clip-distance: 0%;
+
+    --bottom-clip-distance-inverted: 90%;
+    --top-clip-distance-inverted: 90%;
+
+    --top-distance: 30%;
+    --top-clip-list: 60%;
+
+    --top-before: 4px;
+    --top-after: 14px;
+
+    --right-before: 2px;
+    --right-after: 11px;
+
+    --rotation-angle-before: 0deg;
+    --rotation-angle-after: 0deg;
+    
+    --width-after: calc(.6 * .25 * 90px);
+
+    --bottom-distance-p: 100%;
+    --shift-distance: -70vh;
+    --shift-distance-img: 0%;
+    --shift-up-menu: 0%;
+
+    --section-background-1: #ffff;
+    --section-background-2: #ffff;
+    --section-background-3: #110e20;
+    --section-background-4: #397f85;
+    --section-background-5: #ffcee7;
+    --section-background-6: #efeaea;
+    --section-background-7: #0d3b66;
+    --section-background-8: #9eddff;
+    --section-background-9: #dcffa9;
+    --section-background-10: #ffff;
+
+    // --header-color-1: #5945ff;
+    // --header-color-2: #5945ff;
+    // --header-color-3: #e2e6e2;
+    // --header-color-4: #c6807a;
+    // --header-color-5: #003118;
+    // --header-color-6: #101515;
+    // --header-color-7: #f2c499;
+    // --header-color-8: #612200;
+    // --header-color-9: #230056;
+    // --header-color-10: #5945ff;
+
+    --text-color-1: #5945ff;
+    --text-color-2: #5945ff;
+    --text-color-3: #95ac20;
+    --text-color-4: #6e2b85;
+    --text-color-5: #5945ff;
+    --text-color-6: #5945ff;
+    --text-color-7: #987e66;
+    --text-color-8: #5945ff;
+    --text-color-9: #2f2587;
+    --text-color-10: #5945ff;
+
+    --logo-color-1: #3C4CFC;
+    --logo-color-2: #95ac20;
+
+    --paragraph-bottom: 0;
+
+    --opacity-header: 0;
+    --opacity-shadow: 0;
+    --opacity-arrow: 0;
+    --opacity-contacts: 0;
+
+    --rotation-angle-arrow: 90deg;
+    --bottom-line-width: 0%;
+    
+    --width-menu: 0rem;
+
+    --overflow-y-body: auto;
+    --overflow-y-menu: hidden;
+
+    --position-shadow: absolute;
+    
+    --scale-cursor: 1;
+}
+
+// COLORS
+$color-text-main: #5945ff;
+$color-text-2: #95ac20;
+$color-text-3: #6e2b85;
+$color-text-6: #987e66;
+
+$color-header-yellow: #A6BA00;
+$color-header-3: #c6807a;
+$color-header-4: #003118;
+$color-header-5: #101515;
+$color-header-6: #f2c499;
+$color-header-7: #612200;
+$color-header-8: #230056;
+
+$color-background-main: #ffffff;
+$color-background-2: #110e20;
+$color-background-3: #397f85;
+$color-background-4: #ffcee7;
+$color-background-5: #efeaea;
+$color-background-6: #0d3b66;
+$color-background-7: #9eddff;
+$color-background-8: #dcffa9;
+$color-background-footer: #5945ff;
+
+$color-img-1: #62ccc0;
+$color-img-2: #ffdcee;
+$color-img-3: #39b578;
+$color-img-4: #fed883;
+$color-img-5: #0084cd;
+$color-img-6: #9800ed;
+
+// FONTS
+$font-bold: "Gilroy-Bold";
+$font-medium: "Gilroy-Medium";
+$font-light: "Gilroy-Light";
+$font-regular: "Gilroy-Regular";
+
+// FONT-SIZES
+$font-size-main: 1.725rem;
+$font-size-secondary: 19.4333px;
+$font-size-header-1: 8.72333rem;
+
+
+// DISTANCE VARIABLES
+$bottom-clip-distance: var(--bottom-clip-distance);
+$top-clip-distance: var(--top-clip-distance);
+$bottom-clip-distance-inverted: var(--bottom-clip-distance-inverted);
+$top-clip-distance-inverted: var(--top-clip-distance-inverted);
+$top-position-distance: var(--top-distance);
+$bottom-paragraph-distance: var(--bottom-distance-p);
+$shift-distance: var(--shift-distance);
+$shift-distance-img: var(--shift-distance-img);
+$paragraph-bottom: var(--paragraph-bottom);
+$top-before: var(--top-before);
+$top-after: var(--top-after);
+$right-before: var(--right-before);
+$right-after: var(--right-after);
+$top-clip-list: var(--top-clip-list);
+$shift-up-menu: var(--shift-up-menu);
+
+// OPACITY
+$opacity-header: var(--opacity-header);
+$opactiy-arrow: var(--opacity-arrow);
+$opacity-shadow: var(--opacity-shadow);
+$opacity-contacts: var(--opacity-contacts);
+
+// ROTATION
+$rotation-angle-arrow: var(--rotation-angle-arrow);
+$rotation-angle-before: var(--rotation-angle-before);
+$rotation-angle-after: var(--rotation-angle-after);
+
+// WIDTH
+$bottom-line-width: var(--bottom-line-width);
+$width-menu: var(--width-menu);
+$width-after: var(--width-after);
+
+// OVERFLOW
+$overflow-y-body: var(--overflow-y-body);
+$overflow-y-menu: var(--overflow-y-menu);
+
+// SCALE
+$scale-cursor: var(--scale-cursor);
+
+// POSITION
+$position-shadow: var(--position-shadow);
+
+// COLOR LIST
+$colors: $color-img-1, $color-img-2, $color-img-3, $color-img-4, $color-img-5, $color-img-6;

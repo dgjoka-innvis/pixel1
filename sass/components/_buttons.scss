@@ -1,0 +1,61 @@
+.btn {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    transition: top .3s ease-in;
+
+    &--menu {
+        text-decoration: none;
+        font-size:  17.25px;
+        color: $color-text-main;
+        display: inline-block;
+        width: 90px;
+
+        &::before,
+        &::after {
+            content: "";
+            background-color: $color-text-main;
+            display: inline-block;
+            position: absolute;
+            height: 3px;
+            border-radius: 2px;
+            transition: all .2s ease-in;
+        }
+
+        &::before {
+            width: 25%;
+            right: $right-before;
+            top: $top-before;
+            transform: rotate($rotation-angle-before);
+        }
+
+        &::after {
+           width: $width-after;
+           right: $right-after;
+           top: $top-after;
+           transform: rotate($rotation-angle-after);
+        }
+    }
+
+    &--text {
+        clip-path: polygon(0% 0%, 50% 0%, 50% 60%, 0% 60%);
+
+        &--span {
+            display: inline-block;
+            height: 4rem;
+            transform: translateY($shift-up-menu);
+            transition: transform .2s ease-in;
+        }
+    }
+
+    &--lines-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 28px;
+        height: 20px;
+        cursor: pointer;
+        pointer-events: all;
+        z-index: 110;
+    }
+}
